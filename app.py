@@ -19,7 +19,7 @@ def main():
 
     @st.cache_data(persist=True)
     def load_data():
-        data_path = "C:/Users/Prashanth/Documents/Workspace/Streamlit/ML web app/home/coder/coursera/Project/mushrooms.csv"
+        data_path = "C:/Users/Prashanth/Documents/Workspace/mushrooms.csv"
         data = pd.read_csv(data_path)
         label = LabelEncoder()
         for col in data.columns:
