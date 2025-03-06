@@ -12,7 +12,7 @@ from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay, PrecisionRe
 from sklearn.metrics import precision_score, recall_score 
 
 def main():
-    st.title("Binary classification web app")
+    st.title("Binary classification web app sample")
     st.sidebar.title("Binary classification web app")
     st.markdown("Are your mushrooms edible or poisonous? 🍄")
     st.sidebar.markdown("Are your mushrooms edible or poisonous? 🍄")
