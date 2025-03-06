@@ -20,7 +20,7 @@ def main():
     @st.cache_data(persist=True)
     def load_data():
         
-        data_path = "https://github.com/Prashanthsri12/Streamlit/tree/128aa359872e65555f8807d5269d988d6aad8827/data/mushrooms.csv"
+        data_path = "https://raw.githubusercontent.com/Prashanthsri12/Streamlit/128aa359872e65555f8807d5269d988d6aad8827/data/mushrooms.csv"
         data = pd.read_csv(data_path)
         label = LabelEncoder()
         for col in data.columns:
