@@ -12,14 +12,15 @@ from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay, PrecisionRe
 from sklearn.metrics import precision_score, recall_score 
 
 def main():
-    st.title("Binary classification web app sample")
+    st.title("Binary classification web app")
     st.sidebar.title("Binary classification web app")
     st.markdown("Are your mushrooms edible or poisonous? 🍄")
     st.sidebar.markdown("Are your mushrooms edible or poisonous? 🍄")
 
     @st.cache_data(persist=True)
     def load_data():
-        data_path = "https://raw.githubusercontent.com/username/repository/main/path/to/mushrooms.csv"
+        
+        data_path = "https://github.com/Prashanthsri12/Streamlit/tree/128aa359872e65555f8807d5269d988d6aad8827/data/mushrooms.csv"
         data = pd.read_csv(data_path)
         label = LabelEncoder()
         for col in data.columns:
